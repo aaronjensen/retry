@@ -1,4 +1,4 @@
-require_relative '../automated_init'
+require_relative "../automated_init"
 
 context "Error Raised" do
   context "Error Does Not Recur" do

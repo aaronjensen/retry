@@ -1,4 +1,4 @@
-require_relative '../automated_init'
+require_relative "../automated_init"
 
 context "Specific Error" do
   context "Multiple Errors" do
@@ -14,7 +14,7 @@ context "Specific Error" do
     end
 
     [ErrorA, ErrorB].each do |error_class|
-      context "Specific Error Raised (#{error_class.name.split('::').last})" do
+      context "Specific Error Raised (#{error_class.name.split("::").last})" do
         cycles = 0
         Retry.(ErrorA, ErrorB) do |i|
           cycles += 1

@@ -1,4 +1,4 @@
-require_relative 'automated_init'
+require_relative "automated_init"
 
 context "Return Value" do
   control_return_value = SecureRandom.hex
